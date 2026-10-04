@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gran Premio de Mónaco - Acreditaciones</title>
+  <link rel="stylesheet" href="estilos/estilos.css" />
+</head>
+<body>
+
+
+  <header>
+    <div class="cabecera-contenedor">
+      <h1>Gran Premio de Mónaco de Fórmula 1</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="circuito.html">El Circuito</a></li>
+          <li><a href="contacto.html" class="activo">Acreditaciones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section>
+      <h2>Solicitud de Acreditaciones de Prensa y Paddock Club</h2>
+      <p>
+        Completa el siguiente formulario para tramitar tu solicitud de acceso a las zonas exclusivas del Gran Premio. El envío se procesará abriendo directamente tu gestor de correo predeterminado mediante el protocolo <code>mailto:</code>.
+      </p>
+
+      <img src="imagenes/monaco_paddock.jpg" alt="Zona del paddock y boxes del Gran Premio de Mónaco con monoplazas preparándose" class="img-destacada" />
+
+      
+      <form action="mailto:ianda@ikaslea.birt.eus" method="post" enctype="text/plain" class="form-contacto">
+        
+        <div class="campo-form">
+          <label for="nombre">Nombre y Apellidos:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="ion" required />
+        </div>
+
+        <div class="campo-form">
+          <label for="email">Correo electrónico de contacto:</label>
+          <input type="email" id="email" name="email" placeholder="usuario@correo.com" required />
+        </div>
+
+        <div class="campo-form">
+          <label for="tipo_pase">Tipo de pase solicitado:</label>
+          <select id="tipo_pase" name="tipo_pase">
+            <option value="prensa">Prensa escrita y digital</option>
+            <option value="fotografia">Fotografía de pista</option>
+            <option value="paddock">Paddock Club VIP</option>
+            <option value="tribuna">Pase General de Grada</option>
+          </select>
+        </div>
+
+        <div class="campo-form">
+          <label>Días de asistencia:</label>
+          <div class="campo-inline">
+            <input type="checkbox" id="jueves" name="dias" value="jueves" />
+            <label for="jueves">Viernes (Entrenamientos)</label>
+          </div>
+          <div class="campo-inline">
+            <input type="checkbox" id="sabado" name="dias" value="sabado" />
+            <label for="sabado">Sábado (Clasificación)</label>
+          </div>
+          <div class="campo-inline">
+            <input type="checkbox" id="domingo" name="dias" value="domingo" checked />
+            <label for="domingo">Domingo (Carrera)</label>
+          </div>
+        </div>
+
+        <div class="campo-form">
+          <label for="motivo">Motivo o medio de comunicación:</label>
+          <textarea id="motivo" name="motivo" rows="4" placeholder="Indica el medio que representas o detalles de la solicitud..." required></textarea>
+        </div>
+
+        <div class="botones-form">
+          <input type="submit" value="Enviar solicitud" class="btn-enviar" />
+          <input type="reset" value="Restablecer" class="btn-borrar" />
+        </div>
+
+      </form>
+    </section>
+
+    <section>
+      <h3>Canales de atención directa</h3>
+      <p>
+        Para consultas telefónicas o protocolo de seguridad en pista, revisa la normativa en el portal de 
+        <a href="https://www.fia.com/regulations" target="_blank" class="enlace-externo">Reglamentos Deportivos de la FIA</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>ianda</p>
+  </footer>
+
+</body>
+</html>
